@@ -93,6 +93,16 @@
     <Content Include="SoftUpdate\软件自动更新.exe" />
     <Content Include="SoftUpdate\部署说明.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientsLibrary\ClientsLibrary.csproj">
+      <Project>{2063879b-d561-47ff-a0d5-6cef2b9e4abd}</Project>
+      <Name>ClientsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HslCommunicationNetTestTool\HslCommunicationNetTestTool.csproj">
+      <Project>{1aca04d4-bbc0-417d-b06c-14ee030239f2}</Project>
+      <Name>HslCommunicationNetTestTool</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
